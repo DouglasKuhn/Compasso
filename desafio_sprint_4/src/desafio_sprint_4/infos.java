@@ -1,4 +1,4 @@
-package desafio_sprint_5;
+package desafio_sprint_4;
 
 import java.util.Scanner;
 
