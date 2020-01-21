@@ -1,6 +1,6 @@
-package aula_1;
+package solid_aula_1;
 
-import static aula_1.Cargo.*;
+import static solid_aula_1.Cargo.*;
 
 public class CalculadoraDeSalario {
 	

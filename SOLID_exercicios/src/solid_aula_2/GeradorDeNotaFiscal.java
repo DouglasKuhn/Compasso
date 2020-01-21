@@ -1,4 +1,4 @@
-package aula_2;
+package solid_aula_2;
 
 import java.util.List;
 

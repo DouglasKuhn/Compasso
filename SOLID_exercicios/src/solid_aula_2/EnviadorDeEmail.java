@@ -1,4 +1,4 @@
-package aula_2;
+package solid_aula_2;
 
 public class EnviadorDeEmail implements AcaoAposGerarNota {
 
