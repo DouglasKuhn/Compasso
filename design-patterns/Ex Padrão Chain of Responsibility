@@ -1,0 +1,66 @@
+public interface Desconto {
+      double desconta(Orcamento orcamento);
+      void setProximo(Desconto proximo)
+    }
+
+    public class DescontoPorCincoItens implements Desconto {
+      private Desconto proximo;
+
+      public void setProximo(Desconto proximo) {
+        this.proximo = proximo;
+      }
+
+      public double desconta(Orcamento orcamento) {
+        if(orcamento.getItens().size() > 5) {
+          return orcamento.getValor() * 0.1;
+        }
+        else {
+          return proximo.desconta(orcamento);
+        }
+      }
+    }
+
+    public class DescontoPorMaisDeQuinhentosReais implements Desconto {
+      private Desconto proximo;
+
+      public void setProximo(Desconto proximo) {
+        this.proximo = proximo;
+      }
+
+      public double desconta(Orcamento orcamento) {
+        if(orcamento.getValor() > 500) {
+          return orcamento.getValor() * 0.07;
+        }
+        else {
+          return proximo.desconta(orcamento);
+        }
+      }
+    }
+
+    public class SemDesconto implements Desconto {
+
+        public double desconta(Orcamento orcamento) {
+            return 0;
+        }
+
+        public void setProximo(Desconto desconto) {
+            // nao tem!
+        }
+
+    }
+
+    public class TestaCorrente {
+      public static void main(String[] args) {
+        Desconto d1 = new DescontoPorCincoItens();
+        Desconto d2 = new DescontoPorMaisDeQuinhentosReais();
+        Desconto d3 = new SemDesconto();
+
+        d1.setProximo(d2);
+        d2.setProximo(d3);
+
+        Orcamento orcamento = new Orcamento(500.0);
+
+        double desconto = d1.desconta(orcamento);
+        System.out.println(desconto);
+      }
+    }

@@ -4,4 +4,12 @@
 <fullyQualifiedTypeName name="java.io.Reader"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="aula_1.Cargo"/>
+<fullyQualifiedTypeName name="aula_2.AcaoAposGerarNota"/>
+<fullyQualifiedTypeName name="aula_3.CalculadoraDePrecos"/>
+<fullyQualifiedTypeName name="javax.swing.text.TabableView"/>
+<fullyQualifiedTypeName name="aula_3.TabelaDePreco"/>
+<fullyQualifiedTypeName name="aula_3.ServicoDeEntrega"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
