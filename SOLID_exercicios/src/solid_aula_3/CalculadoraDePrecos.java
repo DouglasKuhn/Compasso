@@ -1,7 +1,5 @@
 package solid_aula_3;
 
-import javax.swing.text.TabableView;
-
 public class CalculadoraDePrecos {
 	
 	private TabelaDePreco tabela;

@@ -9,7 +9,17 @@
 <fullyQualifiedTypeName name="javax.swing.text.TabableView"/>
 <fullyQualifiedTypeName name="aula_3.TabelaDePreco"/>
 <fullyQualifiedTypeName name="aula_3.ServicoDeEntrega"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="ISS"/>
+<fullyQualifiedTypeName name="ICMS"/>
+<fullyQualifiedTypeName name="Imposto"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="DescontoPorCincoItens"/>
+<fullyQualifiedTypeName name="DescontoPorMaisDeQuinhentosReais"/>
+<fullyQualifiedTypeName name="Desconto"/>
+<fullyQualifiedTypeName name="SemDesconto"/>
+<fullyQualifiedTypeName name="CalculardorDeImposto"/>
+<fullyQualifiedTypeName name="CalculadorDeDesconto"/>
+<fullyQualifiedTypeName name="Orcamento"/>
 </qualifiedTypeNameHistroy>
