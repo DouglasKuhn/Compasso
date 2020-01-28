@@ -1,0 +1,28 @@
+Descrição: Desafio (Exercício): Criar um programa de linha de comando, em Java 8, para gerenciamento de pedidos. O programa deve respeitar as seguintes premissas:
+
+ 
+//1) Possuir um menu principal, numerado com as seguintes opções: 1 - Verificar Estoque, 2 - Realizar Pedido, 3 - Cadastrar Produto, 4 - Cadastrar Cliente, 5 - Sair.
+
+//2) Os objetos que representam o modelo de dados devem ser expressados em classes Java e seus relacionamentos.
+
+3) Os dados de Estoque, Pedidos, Produtos e Clientes devem ser salvos em um arquivo XML, utilizando coleções de dados Java para percorrer, salvar e resgatar informações. Devendo ser salvos localmente na máquina 
+e no diretório onde está rodando o programa.
+
+//4) Para cada classe criada, o programador deve avaliar quais atribuitos serão necessários para sua construção, acrescentando e removendo caso necessário.
+
+5) O programa deve controlar exceções que podem ocorrer durante a excução, e no caso de erro, a exceção deve ser capturada, tratada e uma mensagem de erro amigável deve ser exibida ao usuário.
+
+6) As opções do Menu devem possuir alteranativa de voltar ao menu principal uma vez navegando nos menus internos. (ex: Se o usuário entrou na opção 1 e esta verificando o estoque de produtos, ele deve ter uma 
+opção de voltar ao menu anterior). O mesmo vale para os outros menus.
+
+7) A opção "2 - Realizar Pedido" deve possibilitar o usuário informar dados de pedido: Produto, Cliente sendo o campo quantidade de tipo primitivo/simples.
+
+8) Programa deve consultar o estoque antes de uma venda, e não deve possibilitar a venda de produtos os quais nao constam no estoque.
+
+9) O modelo de dados do Pedido pode ser composto por objetos Cliente, Produto sendo o campo quantidade primitivo.
+
+10) A coleta de dados do usuário deve ser feita pelo programa pelo teclado, capturando o que o usuário digitou como opção e avaliando.
+
+11) O programa deve ser entregue em formato *.jar executável! Devendo criar os arquivos XML de dados caso não existam no mesmo diretório de onde foi executado.
+
+12) Para as opções k3 e 4 do menu, as listagens dos cadastros, devem ser apresentados em ordem alfabética, tanto quando o usuario entra na lista de Produtos quanto de Clientes.
