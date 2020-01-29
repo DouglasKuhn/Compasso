@@ -36,7 +36,7 @@ public class App {
 		case 1:
 			
 			break;
-		
+			
 		case 2:
 			
 			break;
@@ -55,7 +55,7 @@ public class App {
 
 			System.out.println();
 
-			// Guarda o objeto cliente em uma lista.
+			// Guarda o objeto produto em uma lista.
 			cadastraProduto.cadastrarProduto(produto);
 			
 			break;

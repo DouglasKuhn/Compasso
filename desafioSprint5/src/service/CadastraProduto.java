@@ -3,6 +3,7 @@ package service;
 import model.Produto;
 
 public class CadastraProduto {
+	
 	// private ProdutoDAO produtoDAO;
 
 	public CadastraProduto() {

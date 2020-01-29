@@ -22,4 +22,12 @@
 <fullyQualifiedTypeName name="CalculardorDeImposto"/>
 <fullyQualifiedTypeName name="CalculadorDeDesconto"/>
 <fullyQualifiedTypeName name="Orcamento"/>
+<fullyQualifiedTypeName name="model.Cliente"/>
+<fullyQualifiedTypeName name="service.CadastraCliente"/>
+<fullyQualifiedTypeName name="model.Produto"/>
+<fullyQualifiedTypeName name="dao.DAO"/>
+<fullyQualifiedTypeName name="service.LerLinhaArquivo"/>
+<fullyQualifiedTypeName name="service.EscreverLinhaArquivo"/>
+<fullyQualifiedTypeName name="service.LerArquivo"/>
+<fullyQualifiedTypeName name="model.Converter"/>
 </qualifiedTypeNameHistroy>
