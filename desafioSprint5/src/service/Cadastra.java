@@ -1,17 +1,20 @@
 package service;
 
+import java.io.IOException;
+
 import dao.DAO;
+import model.Produto;
 
 public class Cadastra {
 
 	private DAO dao;
 
-	public Cadastra() {
+	public Cadastra() throws IOException {
 		dao = DAO.getInstance();
 	}
 
-	public boolean cadastrarProduto(Object obj) {
-		return dao.add(obj);
-
+	public void cadastrar(Produto obj) throws IOException {
+		System.out.println("sdfsg");
+		dao.add(obj);
 	}
 }

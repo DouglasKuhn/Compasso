@@ -1,20 +1,24 @@
 package desafioSprint5;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import model.Cliente;
 import model.Produto;
-import service.CadastraCliente;
-import service.CadastraProduto;
+import service.Cadastra;
+//import service.CadastraCliente;
+//import service.CadastraProduto;
 
 public class App {
 	
 	private static Scanner sc = new Scanner(System.in);
-	private static CadastraCliente cadastraCliente;
-	private static CadastraProduto cadastraProduto;
+	private static Cadastra cadastra;
+//	private static CadastraCliente cadastraCliente;
+//	private static CadastraProduto cadastraProduto;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		int opcao = 0;
+		cadastra = new Cadastra();
 		
 		do {
 			System.out.println("## Escolha uma das opções abaixo ##");
@@ -31,7 +35,7 @@ public class App {
 
 	}
 
-	private static int menu(int opcao) {
+	private static int menu(int opcao) throws IOException {
 		switch (opcao) {
 		case 1:
 			
@@ -56,7 +60,9 @@ public class App {
 			System.out.println();
 
 			// Guarda o objeto produto em uma lista.
-			cadastraProduto.cadastrarProduto(produto);
+			System.out.println("pre cadastro");
+			cadastra.cadastrar(produto);
+			System.out.println("pos cadastro");
 			
 			break;
 			
@@ -75,7 +81,7 @@ public class App {
 			System.out.println();
 
 			// Guarda o objeto cliente em uma lista.
-			cadastraCliente.cadastrarCliente(cliente);
+//			cadastra.cadastrar(cliente);
 			
 			break;
 			
@@ -87,6 +93,7 @@ public class App {
 			System.out.println("Codigo Invalido!");
 			break;
 		}
+		System.out.println(opcao);
 		return opcao;
 	}
 

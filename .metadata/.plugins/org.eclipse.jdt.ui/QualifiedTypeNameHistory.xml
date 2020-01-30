@@ -24,10 +24,14 @@
 <fullyQualifiedTypeName name="Orcamento"/>
 <fullyQualifiedTypeName name="model.Cliente"/>
 <fullyQualifiedTypeName name="service.CadastraCliente"/>
-<fullyQualifiedTypeName name="model.Produto"/>
 <fullyQualifiedTypeName name="dao.DAO"/>
 <fullyQualifiedTypeName name="service.LerLinhaArquivo"/>
 <fullyQualifiedTypeName name="service.EscreverLinhaArquivo"/>
 <fullyQualifiedTypeName name="service.LerArquivo"/>
+<fullyQualifiedTypeName name="br.com.compasso.labs.sprint04.service.LerLinhaArquivo"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
+<fullyQualifiedTypeName name="service.Cadastra"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="model.Produto"/>
 <fullyQualifiedTypeName name="model.Converter"/>
 </qualifiedTypeNameHistroy>
