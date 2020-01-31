@@ -21,7 +21,7 @@ public class DAO implements LerLinhaArquivo {
 	private Converter converter;
 
 	public DAO() throws IOException {
-//		this.lerArquivo.readFile(fileName);
+ //		this.lerArquivo.readFile(fileName);
 	}
 
 	public static synchronized DAO getInstance() throws IOException {
