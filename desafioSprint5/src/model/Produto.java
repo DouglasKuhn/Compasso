@@ -4,6 +4,15 @@ public class Produto {
 	private Integer codigo;
 	private String descricao;
 	private Double valor;
+	private int quantidade;
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
 
 	public Integer getCodigo() {
 		return codigo;
@@ -31,6 +40,6 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "Código: " + codigo + "" + "\n" + "Descricao: " + descricao + "" + "\n" + "Valor: R$" + valor + "\n";
+		return "Código: " + codigo + "\n" + "Descricao: " + descricao + "\n" + "Valor: R$" + valor + "\n" + "Quantidade: " + quantidade + "\n";
 	}
 }

@@ -57,17 +57,24 @@ public class App {
 			System.out.print("Digite o código: ");
 			produto.setCodigo(Integer.parseInt(sc.nextLine()));
 
-			System.out.print("Digite o nome: ");
+			System.out.print("Digite a descrição: ");
 			produto.setDescricao(sc.nextLine());
 
-			System.out.print("Digite o endereço: ");
+			System.out.print("Digite Valor: R$ ");
 			produto.setValor(Double.parseDouble(sc.nextLine()));
+			
+			System.out.print("Digite a quantidade: ");
+			produto.setQuantidade(Integer.parseInt(sc.nextLine()));
 
 			System.out.println();
 
 			// Guarda o objeto produto em uma lista.
-			CadastraProduto.cadastrarProduto(produto);
-
+			try {
+				cadastraProduto.cadastrarProduto(produto);
+			} catch (IOException e) {
+				System.out.println("Produto não cadastrado!!" + e.getMessage());
+				e.printStackTrace();
+			}
 			break;
 
 		case 4:
@@ -85,7 +92,12 @@ public class App {
 			System.out.println();
 
 			// Guarda o objeto cliente em uma lista.
-//			cadastra.cadastrar(cliente);
+			try {
+				cadastraCliente.cadastrarCliente(cliente);
+			} catch (IOException e) {
+				System.out.println("Cliente não cadastrado!!" + e.getMessage());
+				e.printStackTrace();
+			}
 
 			break;
 
@@ -97,7 +109,6 @@ public class App {
 			System.out.println("Codigo Invalido!");
 			break;
 		}
-		System.out.println(opcao);
 		return opcao;
 	}
 

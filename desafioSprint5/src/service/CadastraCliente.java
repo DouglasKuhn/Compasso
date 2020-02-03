@@ -1,18 +1,19 @@
 package service;
 
-//import dao.ClienteDAO;
+import java.io.IOException;
+
+import dao.ClienteDAO;
 import model.Cliente;
 
 public class CadastraCliente {
 
-//private ClienteDAO clienteDAO;
+private ClienteDAO clienteDAO;
 
-	public CadastraCliente() {
-//		clienteDAO = ClienteDAO.getInstance();
+	public CadastraCliente() throws IOException {
+		clienteDAO = ClienteDAO.getInstance();
 	}
 
-	public boolean cadastrarCliente(Cliente cliente) {
-//		return clienteDAO.add(pessoa);
-		return false;
+	public boolean cadastrarCliente(Cliente cliente) throws IOException {
+		return clienteDAO.add(cliente);
 	}
 }
