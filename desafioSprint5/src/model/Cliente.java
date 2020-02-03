@@ -1,6 +1,6 @@
 package model;
 
-public class Cliente implements Converter {
+public class Cliente {
 	private Integer codigo;
 	private String nome;
 	private String endereco;
@@ -27,31 +27,6 @@ public class Cliente implements Converter {
 
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
-	}
-
-	@Override
-	public Object converterLinhaDoArquivo(String linha) {
-		if (linha == null || linha.length() == 0) {
-			return null;
-		}
-
-		String[] props = linha.split(DELIMITADOR);
-		this.setCodigo(Integer.parseInt(props[0]));
-		this.setNome(props[1]);
-		this.setEndereco(props[2]);
-		return this;
-	}
-
-	@Override
-	public String converterParaLinhaDoArquivo() {
-		StringBuffer lineStr = new StringBuffer();
-		lineStr.append(this.getCodigo());
-		lineStr.append(DELIMITADOR);
-		lineStr.append(this.getNome());
-		lineStr.append(DELIMITADOR);
-		lineStr.append(this.getEndereco());
-
-		return lineStr.toString();
 	}
 
 	@Override

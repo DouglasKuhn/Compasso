@@ -5,26 +5,21 @@ import java.util.Scanner;
 
 import model.Cliente;
 import model.Produto;
-import service.CadastraCliente;
-import service.CadastraProduto;
-import service.ListaCliente;
-import service.ListaProduto;
+import service.Cadastra;
+//import service.CadastraCliente;
+//import service.CadastraProduto;
 
 public class App {
-
+	
 	private static Scanner sc = new Scanner(System.in);
-	private static CadastraCliente cadastraCliente;
-	private static CadastraProduto cadastraProduto;
-	private static ListaCliente listaCliente;
-	private static ListaProduto listaProduto;
-
+	private static Cadastra cadastra;
+//	private static CadastraCliente cadastraCliente;
+//	private static CadastraProduto cadastraProduto;
+	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		int opcao = 0;
-		cadastraCliente = new CadastraCliente();
-		cadastraProduto = new CadastraProduto();
-		listaCliente = new ListaCliente();
-		listaProduto = new ListaProduto();
-
+		cadastra = new Cadastra();
+		
 		do {
 			System.out.println("## Escolha uma das opções abaixo ##");
 			System.out.println("Opção 1 - Verificar Estoque");
@@ -37,20 +32,19 @@ public class App {
 			System.out.print("Digite aqui sua opção: ");
 			opcao = menu(Integer.parseInt(sc.nextLine()));
 		} while (opcao != 5);
-		
-		sc.close();
+
 	}
 
-	private static int menu(int opcao) {
+	private static int menu(int opcao) throws IOException {
 		switch (opcao) {
 		case 1:
-
+			
 			break;
-
+			
 		case 2:
-
+			
 			break;
-
+			
 		case 3:
 			Produto produto = new Produto();
 
@@ -66,10 +60,12 @@ public class App {
 			System.out.println();
 
 			// Guarda o objeto produto em uma lista.
-			CadastraProduto.cadastrarProduto(produto);
-
+			System.out.println("pre cadastro");
+			cadastra.cadastrar(produto);
+			System.out.println("pos cadastro");
+			
 			break;
-
+			
 		case 4:
 			Cliente cliente = new Cliente();
 
@@ -86,9 +82,9 @@ public class App {
 
 			// Guarda o objeto cliente em uma lista.
 //			cadastra.cadastrar(cliente);
-
+			
 			break;
-
+			
 		case 5:
 			System.out.println("Programa Finalizado!");
 			break;

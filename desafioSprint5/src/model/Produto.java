@@ -1,6 +1,6 @@
 package model;
 
-public class Produto implements Converter {
+public class Produto {
 	private Integer codigo;
 	private String descricao;
 	private Double valor;
@@ -27,31 +27,6 @@ public class Produto implements Converter {
 
 	public void setValor(Double valor) {
 		this.valor = valor;
-	}
-
-	@Override
-	public Object converterLinhaDoArquivo(String linha) {
-		if (linha == null || linha.length() == 0) {
-			return null;
-		}
-
-		String[] props = linha.split(DELIMITADOR);
-		this.setCodigo(Integer.parseInt(props[0]));
-		this.setDescricao(props[1]);
-		this.setValor(Double.parseDouble(props[2]));
-		return this;
-	}
-
-	@Override
-	public String converterParaLinhaDoArquivo() {
-		StringBuffer lineStr = new StringBuffer();
-		lineStr.append(this.getCodigo());
-		lineStr.append(DELIMITADOR);
-		lineStr.append(this.getDescricao());
-		lineStr.append(DELIMITADOR);
-		lineStr.append(this.getValor());
-
-		return lineStr.toString();
 	}
 
 	@Override

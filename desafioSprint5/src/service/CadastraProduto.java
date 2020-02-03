@@ -1,17 +1,19 @@
 package service;
 
+import java.io.IOException;
+
+import dao.ProdutoDAO;
 import model.Produto;
 
 public class CadastraProduto {
 	
-	// private ProdutoDAO produtoDAO;
+	 private ProdutoDAO produtoDAO;
 
-	public CadastraProduto() {
-//			produtoDAO = ProdutoDAO.getInstance();
+	public CadastraProduto() throws IOException {
+			produtoDAO = ProdutoDAO.getInstance();
 	}
 
-	public boolean cadastrarProduto(Produto produto) {
-//			return produtoDAO.add(produto);
-		return false;
+	public boolean cadastrarProduto(Produto produto) throws IOException {
+			return produtoDAO.add(produto);
 	}
 }
