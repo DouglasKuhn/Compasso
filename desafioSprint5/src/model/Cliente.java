@@ -31,7 +31,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Código: " + codigo + "" + "\n" + "Nome: " + nome + "" + "\n" + "Endereço: " + endereco + "" + "\n";
+		return "\nCódigo: " + codigo + "" + "\n" + "Nome: " + nome + "" + "\n" + "Endereço: " + endereco + "" + "\n";
 	}
 
 }

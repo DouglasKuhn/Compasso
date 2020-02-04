@@ -8,7 +8,7 @@ import model.Cliente;
 import model.Produto;
 import service.CadastraCliente;
 import service.CadastraProduto;
-import service.ListaCliente;
+//import service.ListaCliente;
 import service.ListaProduto;
 
 public class App {
@@ -16,14 +16,14 @@ public class App {
 	private static Scanner sc = new Scanner(System.in);
 	private static CadastraCliente cadastraCliente;
 	private static CadastraProduto cadastraProduto;
-	private static ListaCliente listaCliente;
+//	private static ListaCliente listaCliente;
 	private static ListaProduto listaProduto;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		int opcao = 0;
 		cadastraCliente = new CadastraCliente();
 		cadastraProduto = new CadastraProduto();
-		listaCliente = new ListaCliente();
+//		listaCliente = new ListaCliente();
 		listaProduto = new ListaProduto();
 
 		do {
@@ -38,7 +38,7 @@ public class App {
 			System.out.print("Digite aqui sua opção: ");
 			opcao = menu(Integer.parseInt(sc.nextLine()));
 		} while (opcao != 5);
-		
+
 		sc.close();
 	}
 
@@ -55,7 +55,6 @@ public class App {
 				System.out.println("Pressione um tecla para continuar.");
 				sc.nextLine();
 			}
-
 			break;
 
 		case 2:
@@ -73,7 +72,7 @@ public class App {
 
 			System.out.print("Digite Valor: R$ ");
 			produto.setValor(Double.parseDouble(sc.nextLine()));
-			
+
 			System.out.print("Digite a quantidade: ");
 			produto.setQuantidade(Integer.parseInt(sc.nextLine()));
 
