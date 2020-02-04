@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import converter.ClienteConverter;
@@ -31,9 +32,10 @@ public class ClienteDAO implements LerLinhaArquivo{
 		return instance;
 	}
 	
-	public boolean add(Cliente cliente) throws IOException {
-		escreverLinhaDoArquivo(fileName, ClienteConverter.converterClienteParaLinhaDoArquivo(cliente));
-		return clientes.add(cliente);
+	public void add(Cliente cliente) throws IOException {
+		clientes.add(cliente);
+		ordenaPorNome(clientes);
+		escreverLinhaDoArquivo(fileName, clientes);
 	}
 	
 	public List<Cliente> findAll() {
@@ -45,17 +47,30 @@ public class ClienteDAO implements LerLinhaArquivo{
 		clientes.add(ClienteConverter.converterLinhaDoArquivoParaCliente(linha));
 	}
 	
-	public void escreverLinhaDoArquivo(String fileName, String linhaStr) throws IOException {
+	public void escreverLinhaDoArquivo(String fileName, List<Cliente> lstCliente) throws IOException {
 		boolean existeArquivo = new File(fileName).exists();
 		FileWriter fileWriter = new FileWriter(fileName, true);
 		PrintWriter printWriter = new PrintWriter(fileWriter, true);
 		if (existeArquivo) {
-			printWriter.println(linhaStr);
+			for (Cliente cli : lstCliente) {
+				printWriter.println(ClienteConverter.converterClienteParaLinhaDoArquivo(cli));
+			}
 		} else {
-			printWriter.print(linhaStr);
+			for (Cliente cli : lstCliente) {
+				printWriter.print(ClienteConverter.converterClienteParaLinhaDoArquivo(cli));
+			}
 		}
 		printWriter.close();
 		fileWriter.close();
+	}
+	
+	private static void ordenaPorNome(List<Cliente> lista) {
+		Collections.sort(lista, new Comparator<Cliente>() {
+			@Override
+			public int compare(Cliente p1, Cliente p2) {
+				return p1.getNome().compareTo(p2.getNome());
+			}
+		});
 	}
 	
 	

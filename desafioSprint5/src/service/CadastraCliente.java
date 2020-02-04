@@ -13,7 +13,7 @@ private ClienteDAO clienteDAO;
 		clienteDAO = ClienteDAO.getInstance();
 	}
 
-	public boolean cadastrarCliente(Cliente cliente) throws IOException {
-		return clienteDAO.add(cliente);
+	public void cadastrarCliente(Cliente cliente) throws IOException {
+		clienteDAO.add(cliente);
 	}
 }

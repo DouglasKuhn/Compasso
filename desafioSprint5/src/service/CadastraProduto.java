@@ -13,7 +13,7 @@ public class CadastraProduto {
 			produtoDAO = ProdutoDAO.getInstance();
 	}
 
-	public boolean cadastrarProduto(Produto produto) throws IOException {
-			return produtoDAO.add(produto);
+	public void cadastrarProduto(Produto produto) throws IOException {
+			produtoDAO.add(produto);
 	}
 }

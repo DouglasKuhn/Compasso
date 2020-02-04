@@ -1,6 +1,7 @@
 package desafioSprint5;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 import model.Cliente;
@@ -44,6 +45,16 @@ public class App {
 	private static int menu(int opcao) {
 		switch (opcao) {
 		case 1:
+			List<Produto> listPessoasTMP = listaProduto.buscarTodos();
+			if (listPessoasTMP.isEmpty()) {
+				System.out.println("Não existem pessoas cadastradas, pressione uma tecla para continuar!");
+				sc.nextLine();
+			} else {
+				System.out.println(listPessoasTMP.toString());
+
+				System.out.println("Pressione um tecla para continuar.");
+				sc.nextLine();
+			}
 
 			break;
 

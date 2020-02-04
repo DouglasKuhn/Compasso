@@ -10,41 +10,36 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.jdt.ui.actions.GenerateConstructorUsingFields"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.create.getter.setter"/>
+			<item value="org.eclipse.ui.views.ResourceNavigator"/>
 			<item value="org.eclipse.jdt.ui.preferences.CodeAssistPreferencePage"/>
 			<item value="org.eclipse.ant.ui.AntCodeAssistPreferencePage"/>
 			<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
-			<item value="org.eclipse.ui.views.ResourceNavigator"/>
 			<item value="org.eclipse.jdt.ui.PackageExplorer"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.actions"/>
 			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.ui.preferences"/>
 			<item value="org.eclipse.ui.preferences"/>
 			<item value="org.eclipse.ui.wizards"/>
 			<item value="org.eclipse.e4.ui.parts"/>
-			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="2"/>
+			<item value="1"/>
 			<item value="1"/>
 			<item value="2"/>
-			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="const"/>
-			<item value="cons"/>
-			<item value="cgg"/>
+			<item value="get"/>
+			<item value="navi"/>
 			<item value="content assis"/>
 			<item value="content"/>
 			<item value="content assist"/>
 			<item value="new clas"/>
-			<item value="navi"/>
 			<item value="packa"/>
 		</list>
 	</section>
