@@ -12,9 +12,6 @@
 <fullyQualifiedTypeName name="ISS"/>
 <fullyQualifiedTypeName name="ICMS"/>
 <fullyQualifiedTypeName name="Imposto"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="DescontoPorCincoItens"/>
 <fullyQualifiedTypeName name="DescontoPorMaisDeQuinhentosReais"/>
 <fullyQualifiedTypeName name="Desconto"/>
@@ -32,7 +29,6 @@
 <fullyQualifiedTypeName name="service.LerArquivo"/>
 <fullyQualifiedTypeName name="service.EscreverLinhaArquivo"/>
 <fullyQualifiedTypeName name="service.LerLinhaArquivo"/>
-<fullyQualifiedTypeName name="converter.ClienteConverter"/>
 <fullyQualifiedTypeName name="converter.ProdutoConverter"/>
 <fullyQualifiedTypeName name="service.ListaCliente"/>
 <fullyQualifiedTypeName name="desafioSprint5.App"/>
@@ -43,4 +39,9 @@
 <fullyQualifiedTypeName name="dao.ClienteDAO"/>
 <fullyQualifiedTypeName name="model.Cliente"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="converter.ClienteConverter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
